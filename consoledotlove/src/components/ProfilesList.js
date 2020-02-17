@@ -26,16 +26,16 @@ class ProfilesList extends Component {
 
   render() {
     return (
-      <ul>
+      <div>
         {this.state.profiles.map(profile => (
-          <li key={profile._id}>
+          <div key={profile._id}>
             <Link to={`/profiles/${profile._id}`}>
-              {/* <img src={profile.image} /> */}
-              {profile.image}
+              <img src={profile.image} />
+              {profile.name}
             </Link>
-          </li>
+          </div>
         ))}
-      </ul>
+      </div>
     );
   }
 }
