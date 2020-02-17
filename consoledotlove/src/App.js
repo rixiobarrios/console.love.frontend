@@ -1,10 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import axios from 'axios';
-
+import ProfilesList from './components/ProfilesList';
 class App extends Component {
   render() {
-    return <div className="App">This is our app</div>;
+    return (
+      <div className="App">
+        <ProfilesList />
+      </div>
+    );
   }
 }
 
