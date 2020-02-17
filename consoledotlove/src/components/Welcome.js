@@ -35,10 +35,10 @@ class Welcome extends Component {
   //     evt.preventDefault();
   //     axios
   //       .post(`${APIURL}/profiles`, { profile: this.state.profile })
-  //       .then(data => {
-  //         console.log(data);
+  //       .then(response => {
+  //         console.log(response.data);
   //         console.log(this.state.profile);
-  //         this.setState({ createdId: data._id });
+  //         this.setState({ createdId: response.data._id });
   //       })
   //       .catch(() => {
   //         this.setState({ error: true });
@@ -61,7 +61,7 @@ class Welcome extends Component {
       })
       .then(response => {
         console.log(response);
-        this.setState({ createdId: this.state.profile._id });
+        this.setState({ createdId: response._id });
       })
       .catch(() => {
         this.setState({ error: true });
