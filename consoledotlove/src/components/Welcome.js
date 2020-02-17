@@ -61,7 +61,7 @@ class Welcome extends Component {
       })
       .then(response => {
         console.log(response);
-        this.setState({ createdId: response._id });
+        this.setState({ createdId: true });
       })
       .catch(() => {
         this.setState({ error: true });
@@ -74,7 +74,7 @@ class Welcome extends Component {
     console.log(createdId);
     // if a new profile is created, redirect the user to the page with the new profile by id
     if (createdId) {
-      return <Redirect to={`/profiles/${createdId}`} />;
+      return <Redirect to={`/profiles`} />;
     }
 
     return (
