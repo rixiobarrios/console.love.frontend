@@ -36,7 +36,8 @@ class Welcome extends Component {
     axios
       .post(`${APIURL}/profiles`, { profile: this.state.profile })
       .then(response => {
-        this.setState({ createdId: response.id });
+        console.log(response);
+        this.setState({ createdId: response._id });
       })
       .catch(() => {
         this.setState({ error: true });
@@ -45,6 +46,7 @@ class Welcome extends Component {
 
   render() {
     const { createdId } = this.state;
+    console.log(this.state);
     // if a new profile is created, redirect the user to the page with the new profile by id
     if (createdId) {
       return <Redirect to={`/profiles/${createdId}`} />;

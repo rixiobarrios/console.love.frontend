@@ -49,7 +49,7 @@ const ProfileForm = ({ profile, handleSubmit, handleChange }) => (
 
     <label htmlFor="languages">Programming Languages</label>
     <input
-      placeholder="Profile Name"
+      placeholder="Programming Languages"
       //   value={profile.languages}
       onChange={handleChange}
       required
