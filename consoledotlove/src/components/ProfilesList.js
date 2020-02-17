@@ -28,8 +28,8 @@ class ProfilesList extends Component {
     return (
       <div>
         {this.state.profiles.map(profile => (
-          <div key={profile._id}>
-            <Link to={`/profiles/${profile._id}`}>
+          <div key={profile.id}>
+            <Link to={`/profiles/${profile.id}`}>
               <img src={profile.image} />
               {profile.name}
             </Link>

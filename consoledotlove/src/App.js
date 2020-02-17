@@ -11,7 +11,7 @@ class App extends Component {
         <header>{/* <Link to="/profiles">All Profiles</Link> */}</header>
         <main>
           <Switch>
-            <ProfilesList />
+            <Welcome />
           </Switch>
         </main>
       </div>
