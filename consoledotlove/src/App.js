@@ -1,11 +1,19 @@
 import React, { Component } from 'react';
 import './App.css';
 import ProfilesList from './components/ProfilesList';
+import Welcome from './components/Welcome';
+import { Link, Switch, Route } from 'react-router-dom';
+
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <ProfilesList />
+      <div>
+        <header>{/* <Link to="/profiles">All Profiles</Link> */}</header>
+        <main>
+          <Switch>
+            <ProfilesList />
+          </Switch>
+        </main>
       </div>
     );
   }
