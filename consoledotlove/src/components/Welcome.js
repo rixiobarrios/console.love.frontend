@@ -21,24 +21,48 @@ class Welcome extends Component {
     };
   }
 
-  handleChange = event => {
-    event.persist();
+  handleChange = evt => {
+    evt.persist();
     this.setState({
       profile: {
         ...this.state.profile,
-        [event.target.name]: event.target.value
+        [evt.target.name]: evt.target.value
       }
     });
   };
 
+  //   handleSubmit = evt => {
+  //     evt.preventDefault();
+  //     axios
+  //       .post(`${APIURL}/profiles`, { profile: this.state.profile })
+  //       .then(data => {
+  //         console.log(data);
+  //         console.log(this.state.profile);
+  //         this.setState({ createdId: data._id });
+  //       })
+  //       .catch(() => {
+  //         this.setState({ error: true });
+  //       });
+  //   };
+
   handleSubmit = event => {
     event.preventDefault();
-    axios
-      .post(`${APIURL}/profiles`, { profile: this.state.profile })
+    console.log(this.state.profile);
+
+    fetch(`${APIURL}/profiles`, {
+      method: 'POST',
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8'
+      },
+      body: JSON.stringify(this.state.profile)
+    })
+      .then(response => {
+        response.json();
+        console.log(response);
+      })
       .then(response => {
         console.log(response);
-        console.log(this.state.profile);
-        this.setState({ createdId: response._id });
+        this.setState({ createdId: response.profile._id });
       })
       .catch(() => {
         this.setState({ error: true });

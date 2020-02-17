@@ -4,6 +4,7 @@ const ProfileForm = ({ profile, handleSubmit, handleChange }) => (
   <form onSubmit={handleSubmit}>
     <label htmlFor="image">Link to Profile Pic</label>
     <input
+      name="image"
       placeholder="Profile Pic"
       value={profile.image}
       onChange={handleChange}
@@ -13,6 +14,7 @@ const ProfileForm = ({ profile, handleSubmit, handleChange }) => (
 
     <label htmlFor="name">Name</label>
     <input
+      name="name"
       placeholder="Profile Name"
       value={profile.name}
       onChange={handleChange}
@@ -22,6 +24,7 @@ const ProfileForm = ({ profile, handleSubmit, handleChange }) => (
 
     <label htmlFor="Age">Age</label>
     <input
+      name="age"
       placeholder="Profile Age"
       value={profile.age}
       onChange={handleChange}
@@ -31,6 +34,7 @@ const ProfileForm = ({ profile, handleSubmit, handleChange }) => (
 
     <label htmlFor="location">Location</label>
     <input
+      name="location"
       placeholder="Profile Name"
       value={profile.location}
       onChange={handleChange}
@@ -40,6 +44,7 @@ const ProfileForm = ({ profile, handleSubmit, handleChange }) => (
 
     <label htmlFor="about">About Me</label>
     <input
+      name="about"
       placeholder="Profile About Me"
       value={profile.about}
       onChange={handleChange}
@@ -49,6 +54,7 @@ const ProfileForm = ({ profile, handleSubmit, handleChange }) => (
 
     <label htmlFor="languages">Programming Languages</label>
     <input
+      name="languages"
       placeholder="Programming Languages"
       value={profile.languages}
       onChange={handleChange}
