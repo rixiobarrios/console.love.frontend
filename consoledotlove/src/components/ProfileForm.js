@@ -5,7 +5,7 @@ const ProfileForm = ({ profile, handleSubmit, handleChange }) => (
     <label htmlFor="image">Link to Profile Pic</label>
     <input
       placeholder="Profile Pic"
-      //   value={profile.image}
+      value={profile.image}
       onChange={handleChange}
       required
       id="image"
@@ -14,7 +14,7 @@ const ProfileForm = ({ profile, handleSubmit, handleChange }) => (
     <label htmlFor="name">Name</label>
     <input
       placeholder="Profile Name"
-      //   value={profile.name}
+      value={profile.name}
       onChange={handleChange}
       required
       id="name"
@@ -23,7 +23,7 @@ const ProfileForm = ({ profile, handleSubmit, handleChange }) => (
     <label htmlFor="Age">Age</label>
     <input
       placeholder="Profile Age"
-      //   value={profile.age}
+      value={profile.age}
       onChange={handleChange}
       required
       id="age"
@@ -32,7 +32,7 @@ const ProfileForm = ({ profile, handleSubmit, handleChange }) => (
     <label htmlFor="location">Location</label>
     <input
       placeholder="Profile Name"
-      //   value={profile.location}
+      value={profile.location}
       onChange={handleChange}
       required
       id="location"
@@ -41,7 +41,7 @@ const ProfileForm = ({ profile, handleSubmit, handleChange }) => (
     <label htmlFor="about">About Me</label>
     <input
       placeholder="Profile About Me"
-      //   value={profile.about}
+      value={profile.about}
       onChange={handleChange}
       required
       id="about"
@@ -50,7 +50,7 @@ const ProfileForm = ({ profile, handleSubmit, handleChange }) => (
     <label htmlFor="languages">Programming Languages</label>
     <input
       placeholder="Programming Languages"
-      //   value={profile.languages}
+      value={profile.languages}
       onChange={handleChange}
       required
       id="languages"

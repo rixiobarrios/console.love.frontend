@@ -21,22 +21,23 @@ class Welcome extends Component {
     };
   }
 
-  handleChange = evt => {
-    evt.persist();
+  handleChange = event => {
+    event.persist();
     this.setState({
       profile: {
         ...this.state.profile,
-        [evt.target.name]: evt.target.value
+        [event.target.name]: event.target.value
       }
     });
   };
 
-  handleSubmit = evt => {
-    evt.preventDefault();
+  handleSubmit = event => {
+    event.preventDefault();
     axios
       .post(`${APIURL}/profiles`, { profile: this.state.profile })
       .then(response => {
         console.log(response);
+        console.log(this.state.profile);
         this.setState({ createdId: response._id });
       })
       .catch(() => {
@@ -45,8 +46,9 @@ class Welcome extends Component {
   };
 
   render() {
-    const { createdId } = this.state;
     console.log(this.state);
+    const { createdId } = this.state;
+    console.log(createdId);
     // if a new profile is created, redirect the user to the page with the new profile by id
     if (createdId) {
       return <Redirect to={`/profiles/${createdId}`} />;
