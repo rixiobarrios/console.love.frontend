@@ -35,7 +35,7 @@ const ProfileForm = ({ profile, handleSubmit, handleChange }) => (
 		<label htmlFor="location">Location</label>
 		<input
 			name="location"
-			placeholder="Profile Name"
+			placeholder="Profile Location"
 			value={profile.location}
 			onChange={handleChange}
 			required

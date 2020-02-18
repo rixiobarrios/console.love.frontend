@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Link, Switch, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { APIURL } from '../config';
 
 class Profile extends Component {
@@ -34,7 +34,7 @@ class Profile extends Component {
 
 		return (
 			<div>
-				<img src={this.state.profile.image} />
+				<img src={this.state.profile.image} alt={this.state.profile.name} />
 				<div>
 					<ul>
 						<li>{this.state.profile.name}</li>
