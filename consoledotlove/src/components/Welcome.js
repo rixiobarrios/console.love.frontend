@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { Redirect } from 'react-router-dom';
+import { Redirect, Link } from 'react-router-dom';
 import { APIURL } from '../config';
 import ProfileForm from './ProfileForm';
 
@@ -30,20 +30,6 @@ class Welcome extends Component {
 			}
 		});
 	};
-
-	//   handleSubmit = evt => {
-	//     evt.preventDefault();
-	//     axios
-	//       .post(`${APIURL}/profiles`, { profile: this.state.profile })
-	//       .then(response => {
-	//         console.log(response.data);
-	//         console.log(this.state.profile);
-	//         this.setState({ createdId: response.data._id });
-	//       })
-	//       .catch(() => {
-	//         this.setState({ error: true });
-	//       });
-	//   };
 
 	handleSubmit = event => {
 		event.preventDefault();
@@ -85,10 +71,24 @@ class Welcome extends Component {
 					handleChange={this.handleChange}
 					handleSubmit={this.handleSubmit}
 				/>
-				<button onClick={this.setGuest}>Guest</button>
+				<Link to="/profiles">Guest</Link>
 			</div>
 		);
 	}
 }
 
 export default Welcome;
+
+//   handleSubmit = evt => {
+//     evt.preventDefault();
+//     axios
+//       .post(`${APIURL}/profiles`, { profile: this.state.profile })
+//       .then(response => {
+//         console.log(response.data);
+//         console.log(this.state.profile);
+//         this.setState({ createdId: response.data._id });
+//       })
+//       .catch(() => {
+//         this.setState({ error: true });
+//       });
+//   };
