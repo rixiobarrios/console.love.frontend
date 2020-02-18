@@ -8,43 +8,60 @@ import Match from './components/Match';
 import { Link, Switch, Route } from 'react-router-dom';
 
 class App extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			guest: true
-		};
-	}
+    constructor(props) {
+        super(props);
+        this.state = {
+            guest: true
+        };
+    }
 
-	// sets guest with params
-	setGuest = bln => {
-		this.setState({ guest: bln });
-	};
+    // sets guest with params
+    setGuest = bln => {
+        this.setState({ guest: bln });
+    };
 
-	render() {
-		return (
-			<div>
-				<header>
-					<nav>
-						<Link to="/profiles">Logo IMG</Link>
-					</nav>
-				</header>
+    render() {
+        return (
+            <div>
+                <header>
+                    <nav>
+                        <Link to="/profiles">
+                            <img
+                                id="logo"
+                                src="https://i.imgur.com/npPqwxT.png"
+                            />
+                        </Link>
+                    </nav>
+                </header>
 
-				<main>
-					<Switch>
-						<Route
-							exact
-							path="/"
-							render={() => <Welcome setGuest={this.setGuest} />}
-						/>
-						<Route exact path="/profiles" component={ProfilesList} />
-						<Route exact path="/profiles/:id" component={Profile} />
-						<Route exact path="/profiles/:id/edit" component={Edit} />
-						<Route exact path="/profiles/:id/match" component={Match} />
-					</Switch>
-				</main>
-			</div>
-		);
-	}
+                <main>
+                    <Switch>
+                        <Route
+                            exact
+                            path="/"
+                            render={() => <Welcome setGuest={this.setGuest} />}
+                        />
+                        <Route
+                            exact
+                            path="/profiles"
+                            component={ProfilesList}
+                        />
+                        <Route exact path="/profiles/:id" component={Profile} />
+                        <Route
+                            exact
+                            path="/profiles/:id/edit"
+                            component={Edit}
+                        />
+                        <Route
+                            exact
+                            path="/profiles/:id/match"
+                            component={Match}
+                        />
+                    </Switch>
+                </main>
+            </div>
+        );
+    }
 }
 
 export default App;
