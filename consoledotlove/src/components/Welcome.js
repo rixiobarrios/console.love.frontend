@@ -62,6 +62,7 @@ class Welcome extends Component {
 			.then(response => {
 				console.log(response);
 				this.setState({ createdId: true });
+				this.props.setGuest(false);
 			})
 			.catch(() => {
 				this.setState({ error: true });

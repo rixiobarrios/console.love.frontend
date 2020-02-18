@@ -8,6 +8,18 @@ import Match from './components/Match';
 import { Link, Switch, Route } from 'react-router-dom';
 
 class App extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			guest: true
+		};
+	}
+
+	// sets guest with params
+	setGuest = bln => {
+		this.setState({ guest: bln });
+	};
+
 	render() {
 		return (
 			<div>
@@ -19,7 +31,11 @@ class App extends Component {
 
 				<main>
 					<Switch>
-						<Route exact path="/" component={Welcome} />
+						<Route
+							exact
+							path="/"
+							render={() => <Welcome setGuest={this.setGuest} />}
+						/>
 						<Route exact path="/profiles" component={ProfilesList} />
 						<Route exact path="/profiles/:id" component={Profile} />
 						<Route exact path="/profiles/:id/edit" component={Edit} />
