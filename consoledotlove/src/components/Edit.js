@@ -4,79 +4,104 @@ import { APIURL } from '../config';
 import ProfileForm from './ProfileForm';
 
 class Edit extends Component {
-	constructor(props) {
-		super(props);
-		this.state = {
-			profile: {
-				image: '',
-				name: '',
-				age: '',
-				location: '',
-				about: '',
-				languages: ''
-			},
-			createdId: null,
-			error: false
-		};
-	}
+  constructor(props) {
+    super(props);
+    this.state = {
+      profile: {
+        image: '',
+        name: '',
+        age: '',
+        location: '',
+        about: '',
+        languages: ''
+      },
+      updated: false,
+      deleted: false,
+      error: false
+    };
+  }
 
-	handleChange = evt => {
-		evt.persist();
-		this.setState({
-			profile: {
-				...this.state.profile,
-				[evt.target.name]: evt.target.value
-			}
-		});
-	};
+  // get profile by id and set state with its values
+  componentDidMount() {
+    fetch(`${APIURL}/profiles/${this.props.match.params.id}`)
+      .then(response => response.json())
+      .then(data => {
+        this.setState({ profile: data });
+      })
+      .catch(() => {
+        this.setState({ error: true });
+      });
+  }
 
-	handleSubmit = event => {
-		event.preventDefault();
-		console.log(this.state.profile);
+  // pre-populate edit form w/new state object properties
+  handleChange = evt => {
+    evt.persist();
+    this.setState({
+      profile: {
+        ...this.state.profile,
+        [evt.target.name]: evt.target.value
+      }
+    });
+  };
 
-		// fetch(`${APIURL}/profiles`, {
-		// 	method: 'POST',
-		// 	headers: {
-		// 		'Content-type': 'application/json; charset=UTF-8'
-		// 	},
-		// 	body: JSON.stringify(this.state.profile)
-		// })
-		// 	.then(response => {
-		// 		response.json();
-		// 	})
-		// 	.then(response => {
-		// 		console.log(response);
-		// 		this.setState({ createdId: true });
-		// 	})
-		// 	.catch(() => {
-		// 		this.setState({ error: true });
-		// 	});
-	};
+  handleSubmit = event => {
+    event.preventDefault();
 
-	render() {
-		console.log(this.state.profile._id);
-		const { createdId } = this.state;
-		console.log(createdId);
-		// if a new profile is created, redirect the user to the page with the new profile by id
-		if (createdId) {
-			return <Redirect to={`/profiles`} />;
-		}
+    fetch(`${APIURL}/profiles/${this.props.match.params.id}/edit`, {
+      method: 'PUT',
+      headers: {
+        'Content-type': 'application/json; charset=UTF-8'
+      },
+      body: JSON.stringify(this.state)
+    })
+      .then(response => {
+        this.setState({ updated: true });
+      })
+      .catch(() => {
+        this.setState({ error: true });
+      });
+  };
 
-		return (
-			<div>
-				<div>
-					<ProfileForm
-						profile={this.state.profile}
-						handleChange={this.handleChange}
-						handleSubmit={this.handleSubmit}
-					/>
-				</div>
-				<div>
-					<button onClick={this.deleteProfile}></button>
-				</div>
-			</div>
-		);
-	}
+  handleDelete = evt => {
+    fetch(`${APIURL}/profiles/${this.props.match.params.id}`, {
+      method: 'DELETE'
+    })
+      .then(res => {
+        this.setState({ deleted: true });
+      })
+      .catch(() => {
+        this.setState({ error: true });
+      });
+  };
+
+  render() {
+    if (this.state.error) {
+      return <div>There was an error :/</div>;
+    }
+
+    if (this.state.updated) {
+      return <Redirect to={`/profiles/${this.props.match.params.id}`} />;
+    }
+
+    if (this.state.deleted) {
+      return <Redirect to="/" />;
+    }
+
+    return (
+      <div>
+        <div>
+          <ProfileForm
+            profile={this.state.profile}
+            handleChange={this.handleChange}
+            handleSubmit={this.handleSubmit}
+          />
+        </div>
+        <div>
+          <button onClick={this.handleDelete}>Delete Profile</button>
+        </div>
+      </div>
+    );
+  }
 }
 
 export default Edit;
