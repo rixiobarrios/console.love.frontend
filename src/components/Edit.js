@@ -97,8 +97,10 @@ class Edit extends Component {
             handleSubmit={this.handleSubmit}
           />
         </div>
-        <div>
-          <button onClick={this.handleDelete}>Delete Profile</button>
+        <div className="delete-container">
+          <button className="delete-button" onClick={this.handleDelete}>
+            Delete Profile
+          </button>
         </div>
       </div>
     );

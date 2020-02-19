@@ -7,26 +7,28 @@ html {
     flex-wrap: wrap;
     justify-content: center;
     max-width: 800px;
-    margin: 0 auto;
+    /* margin: 0px, 0px, 0px, 0px; */
     border: 1px solid black;
     /* display: inline-grid;
     grid-template-columns: 1fr 1fr 1fr; */
     /* grid-template-columns: 1fr 1fr; */
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 500px) {
 }
 
-img {
-    margin: 0 40px 20px 0;
-    padding: 5px;
-    max-width: 200px;
-    max-height: 200px;
+@media (max-width: 500px) {
+}
+
+#profile-image-list {
+    /* margin: 0 40px 20px 0; */
+    border: 1px solid green;
+    margin: 10px;
+    padding: 0 auto;
+    max-width: 150px;
+    max-height: 150px;
     /* border-radius: 125px; */
     /* border-radius: 64px; */
     border-radius: 32px;
     /* border-radius: 0; */
-}
-
-@media (max-width: 1200px) {
 }
