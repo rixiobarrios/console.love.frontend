@@ -13,7 +13,7 @@ class Welcome extends Component {
         name: '',
         age: '',
         location: '',
-        about: '',
+        bio: '',
         languages: ''
       },
       createdId: null,
