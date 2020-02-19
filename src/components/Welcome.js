@@ -14,7 +14,8 @@ class Welcome extends Component {
         age: '',
         location: '',
         bio: '',
-        languages: ''
+        languages: '',
+        github: ''
       },
       createdId: null,
       error: false

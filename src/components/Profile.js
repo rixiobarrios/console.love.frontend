@@ -45,6 +45,7 @@ class Profile extends Component {
             <li>{this.state.profile.location}</li>
             <li>{this.state.profile.bio}</li>
             <li>{this.state.profile.languages}</li>
+            <li>{this.state.profile.github}</li>
           </ul>
           <Link to={`/profiles/${this.state.profile._id}/edit`}>Edit</Link>
           <Link to={`/profiles/${this.state.profile._id}/match`}>Match</Link>
