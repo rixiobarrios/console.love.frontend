@@ -5,9 +5,9 @@ nav {
 }
 
 .guest-link {
+  text-decoration: underline;
   display: block;
   text-align: center;
-  padding: 0.5rem 0.75rem;
 }
 
 .delete-container {
@@ -23,5 +23,5 @@ nav {
 }
 
 #logo {
-    border: 1px solid red;
+  border: 1px solid red;
 }

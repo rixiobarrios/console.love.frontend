@@ -58,7 +58,7 @@ class ProfilesList extends Component {
       return <div>Loading...</div>;
     }
     return (
-      <div>
+      <div className="profiles-container">
         <div className="profile-container">
           {this.state.shownProfiles.map(profile => (
             <div key={profile._id}>
@@ -72,9 +72,13 @@ class ProfilesList extends Component {
             </div>
           ))}
         </div>
-        {pNumber < this.state.profiles.length && (
-          <button onClick={this.showMore}>Show More</button>
-        )}
+        <div className="show-more-container">
+          {pNumber < this.state.profiles.length && (
+            <button className="show-more-button" onClick={this.showMore}>
+              Show More
+            </button>
+          )}
+        </div>
       </div>
     );
   }
