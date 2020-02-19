@@ -62,6 +62,16 @@ const ProfileForm = ({ profile, handleSubmit, handleChange }) => (
       id="languages"
     />
 
+    <label htmlFor="github"></label>
+    <input
+      name="github"
+      placeholder="github link"
+      value={profile.github}
+      onChange={handleChange}
+      required
+      id="github"
+    />
+
     <button type="submit">Submit</button>
   </form>
 );

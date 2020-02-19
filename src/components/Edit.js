@@ -13,7 +13,8 @@ class Edit extends Component {
         age: '',
         location: '',
         bio: '',
-        languages: ''
+        languages: '',
+        github: ''
       },
       updated: false,
       deleted: false,
