@@ -1,0 +1,39 @@
+.form-container {
+  display: block;
+  text-align: center;
+  border: 2px solid black;
+}
+
+form {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+input {
+  border: 2px solid black;
+  display: block;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+  max-width: 400px;
+  min-width: 250px;
+  padding: 0.5rem 0.75rem;
+  width: 100%;
+}
+
+#submit-button {
+  border: 2px solid black;
+  /* display: flex;
+  justify-content: center; */
+
+  display: block;
+  /* text-align: center; */
+  font-size: 1rem;
+  /* margin-right: 1rem; */
+  /* max-width: 400px;
+  min-width: 250px; */
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  background-color: crimson;
+  color: white;
+}

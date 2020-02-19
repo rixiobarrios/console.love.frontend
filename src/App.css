@@ -1,5 +1,15 @@
 header,
 nav {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+}
+
+.guest-div {
+  display: block;
+  text-align: center;
+}
+
+.guest-button {
+  display: inline-block;
+  text-align: center;
 }
