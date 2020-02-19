@@ -3,3 +3,7 @@ nav {
     display: flex;
     justify-content: center;
 }
+
+#logo {
+    border: 1px solid red;
+}
