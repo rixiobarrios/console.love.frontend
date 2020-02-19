@@ -73,10 +73,8 @@ class Welcome extends Component {
           handleSubmit={this.handleSubmit}
         />
         {/* fade button and center */}
-        <div className="guest-div">
-          <Link className="guest-link" to="/profiles">
-            Continue as Guest
-          </Link>
+        <div className="guest-link">
+          <Link to="/profiles">Continue as Guest</Link>
         </div>
       </div>
     );
