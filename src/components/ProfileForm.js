@@ -42,14 +42,14 @@ const ProfileForm = ({ profile, handleSubmit, handleChange }) => (
       id="location"
     />
 
-    <label htmlFor="about"></label>
+    <label htmlFor="bio"></label>
     <input
-      name="about"
-      placeholder="About Me"
-      value={profile.about}
+      name="bio"
+      placeholder="Bio"
+      value={profile.bio}
       onChange={handleChange}
       required
-      id="about"
+      id="bio"
     />
 
     <label htmlFor="languages"></label>

@@ -43,7 +43,7 @@ class Profile extends Component {
             <li>{this.state.profile.name}</li>
             <li>{this.state.profile.age}</li>
             <li>{this.state.profile.location}</li>
-            <li>{this.state.profile.about}</li>
+            <li>{this.state.profile.bio}</li>
             <li>{this.state.profile.languages}</li>
           </ul>
           <Link to={`/profiles/${this.state.profile._id}/edit`}>Edit</Link>
