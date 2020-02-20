@@ -53,17 +53,21 @@ class Profile extends Component {
                             <li>Bio: {this.state.profile.bio}</li>
                             <li>Programming: {this.state.profile.languages}</li>
                             <li>
-                                <a href={this.state.profile.github}>Github</a>
+                                <a href={this.state.profile.github}>
+                                    <button className="github-button">
+                                        Github
+                                    </button>
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div>
                     <Link to={`/profiles/${this.state.profile._id}/edit`}>
-                        Edit
+                        <button className="edit-button">Edit</button>
                     </Link>
                     <Link to={`/profiles/${this.state.profile._id}/match`}>
-                        Match
+                        <button className="match-button">Match</button>
                     </Link>
                 </div>
             </div>

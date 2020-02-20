@@ -5,6 +5,8 @@ nav {
 }
 
 .guest-link {
+    color: crimson;
+    font-family: 'Bungee', cursive;
     text-decoration: underline;
     display: block;
     text-align: center;
@@ -36,4 +38,11 @@ nav {
 
 #logo {
     border: 1px solid red;
+    width: 400px;
+}
+
+@media (max-width: 500px) {
+    #logo {
+        width: 280px;
+    }
 }

@@ -8,7 +8,7 @@ html {
 }
 
 .profile-container {
-    max-width: 800px;
+    max-width: 900px;
     border: 1px solid black;
     display: inline-grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -16,6 +16,7 @@ html {
 
 @media (max-width: 500px) {
     .profile-container {
+        max-width: 300px;
         grid-template-columns: 1fr 1fr;
     }
 }
@@ -29,24 +30,45 @@ html {
     border: 1px solid grey;
     display: block;
     margin: auto;
+    font-family: 'Bungee', cursive;
     font-size: 1rem;
     width: 280px;
     padding: 0.5rem 0.75rem;
-    background-color: green;
+    background-color: crimson;
     color: white;
-}
-
-@media (max-width: 500px) {
-}
-
-@media (max-width: 500px) {
 }
 
 #profile-image-list {
     border: 1px solid green;
     margin: 10px;
     padding: 0 auto;
-    max-width: 130px;
-    max-height: 130px;
+    max-width: 260px;
+    max-height: 260px;
     border-radius: 32px;
+}
+
+@media (max-width: 500px) {
+    #profile-image-list {
+        max-width: 130px;
+        max-height: 130px;
+    }
+}
+
+#profile-name-age {
+    border: 1px solid fuchsia;
+    font-family: 'Permanent Marker', cursive;
+}
+
+.loading {
+    display: block;
+    text-align: center;
+    font-family: 'Bungee', cursive;
+    font-size: 1rem;
+}
+
+.sorry {
+    display: block;
+    text-align: center;
+    font-family: 'Bungee', cursive;
+    font-size: 1rem;
 }
