@@ -20,6 +20,16 @@ html {
         grid-template-columns: 1fr 1fr;
     }
 }
+
+#profile-image-list {
+    border: 1px solid green;
+    margin: 10px;
+    padding: 0 auto;
+    max-width: 260px;
+    max-height: 260px;
+    border-radius: 32px;
+}
+
 .show-more-container {
     display: block;
     text-align: center;
@@ -29,22 +39,13 @@ html {
 .show-more-button {
     border: 1px solid grey;
     display: block;
-    margin: auto;
+    margin: 15px auto;
     font-family: 'Bungee', cursive;
     font-size: 1rem;
     width: 280px;
     padding: 0.5rem 0.75rem;
     background-color: crimson;
     color: white;
-}
-
-#profile-image-list {
-    border: 1px solid green;
-    margin: 10px;
-    padding: 0 auto;
-    max-width: 260px;
-    max-height: 260px;
-    border-radius: 32px;
 }
 
 @media (max-width: 500px) {
@@ -56,19 +57,42 @@ html {
 
 #profile-name-age {
     border: 1px solid fuchsia;
-    font-family: 'Permanent Marker', cursive;
+    font-family: 'Pangolin', cursive;
+    /* font-family: 'Bungee', cursive; */
 }
 
 .loading {
     display: block;
     text-align: center;
-    font-family: 'Bungee', cursive;
+    border: 1px solid teal;
+    /* font-family: 'Bungee', cursive; */
+    font-family: 'Pangolin', cursive;
     font-size: 1rem;
 }
 
 .sorry {
     display: block;
     text-align: center;
-    font-family: 'Bungee', cursive;
+    border: 1px solid green;
+    /* font-family: 'Bungee', cursive; */
+    font-family: 'Pangolin', cursive;
+    font-size: 1rem;
+}
+
+.match {
+    display: block;
+    text-align: center;
+    border: 1px solid blue;
+    /* font-family: 'Bungee', cursive; */
+    font-family: 'Pangolin', cursive;
+    font-size: 1rem;
+}
+
+.not-match {
+    display: block;
+    text-align: center;
+    border: 1px solid black;
+    /* font-family: 'Bungee', cursive; */
+    font-family: 'Pangolin', cursive;
     font-size: 1rem;
 }

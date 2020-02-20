@@ -6,7 +6,8 @@ nav {
 
 .guest-link {
     color: crimson;
-    font-family: 'Bungee', cursive;
+    /* font-family: 'Bungee', cursive; */
+    font-family: 'Pangolin', cursive;
     text-decoration: underline;
     display: block;
     text-align: center;
@@ -29,6 +30,7 @@ nav {
     border: 1px solid grey;
     display: block;
     margin: auto;
+    font-family: 'Bungee', cursive;
     font-size: 1rem;
     width: 280px;
     padding: 0.5rem 0.75rem;
