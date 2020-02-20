@@ -2,7 +2,7 @@ import React from 'react';
 import './ProfileForm.css';
 
 const ProfileForm = ({ profile, handleSubmit, handleChange }) => (
-  <div className="form-container">
+  <div data-testid="profile-form" className="form-container">
     <form onSubmit={handleSubmit}>
       <label htmlFor="image"></label>
       <input
