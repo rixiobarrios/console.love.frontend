@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import axios from 'axios';
 import { Redirect, Link } from 'react-router-dom';
 import { APIURL } from '../config';
 import ProfileForm from './ProfileForm';
