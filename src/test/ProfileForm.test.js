@@ -34,7 +34,7 @@ describe('ProfileForm component', () => {
         handleChange={defaultProps.handleChange}
       />
     );
-    console.log(component.find('#sign-up-message'));
-    expect(component.find('#sign-up-message').length).toBe(1);
+    console.log(component.find('.form-container'));
+    expect(component.find('.form-container').length).toBe(1);
   });
 });
