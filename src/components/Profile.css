@@ -88,10 +88,10 @@ a {
 }
 
 a:link {
-    color: black;
+    color: none;
 }
 a:visited {
-    color: black;
+    color: none;
 }
 
 a:hover {

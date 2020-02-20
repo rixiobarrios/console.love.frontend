@@ -4,11 +4,19 @@
     border: 1px solid orange;
 }
 
-#signup-message {
+#sign-up-message {
     border: 1px solid brown;
-    margin: 15px 10px 15px 10px;
+    font-size: 1.2rem;
+    margin: 15px 400px 15px 400px;
     /* padding: 15px 10px 15px 10px; */
     font-family: 'Pangolin', cursive;
+}
+
+@media (max-width: 500px) {
+    #sign-up-message {
+        font-size: 1rem;
+        margin: 15px 103px 15px 103px;
+    }
 }
 
 form {

@@ -2,9 +2,8 @@ import React from 'react';
 import './ProfileForm.css';
 
 const ProfileForm = ({ profile, handleSubmit, handleChange }) => (
-
     <div className="form-container">
-        <p id="signup-message">
+        <p id="sign-up-message">
             Welcome to console.love,
             <br />
             an app for programmers to find love and friendship.

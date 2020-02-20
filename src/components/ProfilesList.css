@@ -64,6 +64,7 @@ html {
 .loading {
     display: block;
     text-align: center;
+    margin-top: 150px;
     border: 1px solid teal;
     /* font-family: 'Bungee', cursive; */
     font-family: 'Pangolin', cursive;
@@ -73,6 +74,7 @@ html {
 .sorry {
     display: block;
     text-align: center;
+    margin-top: 150px;
     border: 1px solid green;
     /* font-family: 'Bungee', cursive; */
     font-family: 'Pangolin', cursive;
@@ -82,17 +84,31 @@ html {
 .match {
     display: block;
     text-align: center;
+    margin-top: 150px;
     border: 1px solid blue;
     /* font-family: 'Bungee', cursive; */
     font-family: 'Pangolin', cursive;
-    font-size: 1rem;
+    font-size: 3rem;
+}
+
+@media (max-width: 500px) {
+    .match {
+        font-size: 2rem;
+    }
 }
 
 .not-match {
     display: block;
     text-align: center;
+    margin-top: 150px;
     border: 1px solid black;
     /* font-family: 'Bungee', cursive; */
     font-family: 'Pangolin', cursive;
-    font-size: 1rem;
+    font-size: 1.4rem;
+}
+
+@media (max-width: 500px) {
+    .not-match {
+        font-size: 0.9rem;
+    }
 }
