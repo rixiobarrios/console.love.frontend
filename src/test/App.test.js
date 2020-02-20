@@ -6,7 +6,7 @@ import App from '../App';
 describe('App component', () => {
   it('should render', () => {
     const component = shallow(<App />);
-    console.log(component.find('.match-container'));
-    expect(component.find('.match-container').length).toBe(1);
+    console.log(component.find('.app-container'));
+    expect(component.find('.app-container').length).toBe(1);
   });
 });
