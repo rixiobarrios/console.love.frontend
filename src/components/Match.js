@@ -5,7 +5,11 @@ class Match extends Component {
     matchAlgorithm = () => {
         let match = _.sample([true, false]);
         return match ? (
-            <h1 className="match">It's a .match()!</h1>
+            <h1 className="match">
+                It's a .match()!
+                <br />
+                Start coding together!
+            </h1>
         ) : (
             <div className="not-match">
                 <h1>
@@ -13,7 +17,7 @@ class Match extends Component {
                     <br />
                     not a .match()
                 </h1>
-                <h2>Debugging in process...</h2>
+                <h2>Debugging in progress...</h2>
             </div>
         );
     };

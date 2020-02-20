@@ -73,8 +73,7 @@ class ProfilesList extends Component {
                                     alt={profile.name}
                                 />
                                 <span id="profile-name-age">
-                                    {profile.name},{''}
-                                    {profile.age}
+                                    {profile.name},{profile.age}
                                 </span>
                             </Link>
                         </div>

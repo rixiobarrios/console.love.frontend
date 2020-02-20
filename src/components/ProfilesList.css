@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 html {
     background: none;
 }
@@ -30,6 +32,13 @@ html {
     border-radius: 32px;
 }
 
+#profile-name-age {
+    border: 1px solid fuchsia;
+    font-family: 'Roboto', cursive;
+    word-spacing: 5em;
+    /* font-family: 'Bungee', cursive; */
+}
+
 .show-more-container {
     display: block;
     text-align: center;
@@ -55,19 +64,13 @@ html {
     }
 }
 
-#profile-name-age {
-    border: 1px solid fuchsia;
-    font-family: 'Pangolin', cursive;
-    /* font-family: 'Bungee', cursive; */
-}
-
 .loading {
     display: block;
     text-align: center;
     margin-top: 150px;
     border: 1px solid teal;
     /* font-family: 'Bungee', cursive; */
-    font-family: 'Pangolin', cursive;
+    font-family: 'Roboto', cursive;
     font-size: 1rem;
 }
 
@@ -77,7 +80,7 @@ html {
     margin-top: 150px;
     border: 1px solid green;
     /* font-family: 'Bungee', cursive; */
-    font-family: 'Pangolin', cursive;
+    font-family: 'Roboto', cursive;
     font-size: 1rem;
 }
 
@@ -87,7 +90,7 @@ html {
     margin-top: 150px;
     border: 1px solid blue;
     /* font-family: 'Bungee', cursive; */
-    font-family: 'Pangolin', cursive;
+    font-family: 'Roboto', cursive;
     font-size: 3rem;
 }
 
@@ -103,7 +106,7 @@ html {
     margin-top: 150px;
     border: 1px solid black;
     /* font-family: 'Bungee', cursive; */
-    font-family: 'Pangolin', cursive;
+    font-family: 'Roboto', cursive;
     font-size: 1.4rem;
 }
 
