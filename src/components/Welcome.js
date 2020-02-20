@@ -33,7 +33,6 @@ class Welcome extends Component {
 
 	handleSubmit = event => {
 		event.preventDefault();
-		console.log(this.state.profile);
 
 		fetch(`${APIURL}/profiles`, {
 			method: 'POST',
@@ -56,9 +55,7 @@ class Welcome extends Component {
 	};
 
 	render() {
-		console.log(this.state.profile._id);
 		const { createdId } = this.state;
-		console.log(createdId);
 		// if a new profile is created, redirect the user to the page with the new profile by id
 		if (createdId) {
 			return <Redirect to={`/profiles`} />;
