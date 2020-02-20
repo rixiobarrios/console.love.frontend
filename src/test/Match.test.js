@@ -4,9 +4,9 @@ import { shallow } from 'enzyme';
 import Match from '../components/Match';
 
 describe('Match component', () => {
-	it('should render', () => {
-		const component = shallow(<Match />);
-		console.log(component.find('.match-container'));
-		expect(component.find('.match-container').length).toBe(1);
-	});
+  it('should render', () => {
+    const component = shallow(<Match />);
+    console.log(component.find('.match-container'));
+    expect(component.find('.match-container').length).toBe(1);
+  });
 });
