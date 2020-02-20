@@ -91,12 +91,12 @@ html {
     border: 1px solid blue;
     /* font-family: 'Bungee', cursive; */
     font-family: 'Roboto', cursive;
-    font-size: 3rem;
+    font-size: 2.6rem;
 }
 
 @media (max-width: 500px) {
     .match {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
 }
 
