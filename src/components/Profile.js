@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './Profile.css';
-import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { APIURL } from '../config';
 
@@ -51,19 +50,23 @@ class Profile extends Component {
                             <li>Age: {this.state.profile.age}</li>
                             <li>City: {this.state.profile.location}</li>
                             <li>Bio: {this.state.profile.bio}</li>
-                            <li>Programming: {this.state.profile.languages}</li>
+                            <li>Languages: {this.state.profile.languages}</li>
                             <li>
-                                <a href={this.state.profile.github}>Github</a>
+                                <a href={this.state.profile.github}>
+                                    <button className="github-button">
+                                        Github
+                                    </button>
+                                </a>
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div>
                     <Link to={`/profiles/${this.state.profile._id}/edit`}>
-                        Edit
+                        <button className="edit-button">Edit</button>
                     </Link>
                     <Link to={`/profiles/${this.state.profile._id}/match`}>
-                        Match
+                        <button className="match-button">Match</button>
                     </Link>
                 </div>
             </div>

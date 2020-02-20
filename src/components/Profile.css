@@ -2,6 +2,7 @@
     display: block;
     text-align: center;
     text-decoration: none;
+    border: 1px solid greenyellow;
 }
 
 .profile-box {
@@ -21,8 +22,17 @@
     /* border-radius: 0; */
 }
 
+@media (max-width: 500px) {
+    #profile-image {
+        max-width: 280px;
+        max-height: 280px;
+    }
+}
+
 .profile-ul {
     list-style-type: none;
+    border: 1px solid purple;
+    font-family: 'Pangolin', cursive;
 }
 
 .profile-list {
@@ -31,6 +41,63 @@
     max-height: 400px;
 }
 
+.github-button {
+    border: 1px solid grey;
+    display: block;
+    margin: 25px 0px -15px 30px;
+    font-family: 'Bungee', cursive;
+    font-size: 1rem;
+    width: 280px;
+    padding: 0.5rem 0.75rem;
+    background-color: crimson;
+    color: white;
+}
+
+@media (max-width: 500px) {
+    .github-button {
+        margin: 25px 0px -15px 20px;
+    }
+}
+
+.edit-button {
+    border: 1px solid grey;
+    display: block;
+    margin: 10px auto;
+    font-family: 'Bungee', cursive;
+    font-size: 1rem;
+    width: 280px;
+    padding: 0.5rem 0.75rem;
+    background-color: black;
+    color: white;
+}
+
+.match-button {
+    border: 1px solid grey;
+    display: block;
+    margin: auto;
+    font-family: 'Bungee', cursive;
+    font-size: 1rem;
+    width: 280px;
+    padding: 0.5rem 0.75rem;
+    background-color: crimson;
+    color: white;
+}
+/*--- All Links ---*/
 a {
     text-decoration: none;
+}
+
+a:link {
+    color: black;
+}
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: none;
+}
+
+a:active {
+    color: none;
 }

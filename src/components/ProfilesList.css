@@ -1,51 +1,98 @@
 html {
-  background: none;
+    background: none;
 }
 
 .profiles-container {
-  display: block;
-  text-align: center;
+    display: block;
+    text-align: center;
 }
 
 .profile-container {
-  max-width: 800px;
-  border: 1px solid black;
-  display: inline-grid;
-  grid-template-columns: 1fr 1fr 1fr;
+    max-width: 900px;
+    border: 1px solid black;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 @media (max-width: 500px) {
-  .profile-container {
-    grid-template-columns: 1fr 1fr;
-  }
-}
-.show-more-container {
-  display: block;
-  text-align: center;
-}
-
-.show-more-button {
-  font-size: 1rem;
-  background-color: white;
-  padding: 0.5rem 0.75rem;
-  border: 1px solid grey;
-  font-size: 1rem;
-  padding: 0.5rem 0.75rem;
-  background-color: crimson;
-  color: white;
-}
-
-@media (max-width: 500px) {
-}
-
-@media (max-width: 500px) {
+    .profile-container {
+        max-width: 300px;
+        grid-template-columns: 1fr 1fr;
+    }
 }
 
 #profile-image-list {
-  border: 1px solid green;
-  margin: 10px;
-  padding: 0 auto;
-  max-width: 130px;
-  max-height: 130px;
-  border-radius: 32px;
+    border: 1px solid green;
+    margin: 10px;
+    padding: 0 auto;
+    max-width: 260px;
+    max-height: 260px;
+    border-radius: 32px;
+}
+
+.show-more-container {
+    display: block;
+    text-align: center;
+    border: 1px solid burlywood;
+}
+
+.show-more-button {
+    border: 1px solid grey;
+    display: block;
+    margin: 15px auto;
+    font-family: 'Bungee', cursive;
+    font-size: 1rem;
+    width: 280px;
+    padding: 0.5rem 0.75rem;
+    background-color: crimson;
+    color: white;
+}
+
+@media (max-width: 500px) {
+    #profile-image-list {
+        max-width: 130px;
+        max-height: 130px;
+    }
+}
+
+#profile-name-age {
+    border: 1px solid fuchsia;
+    font-family: 'Pangolin', cursive;
+    /* font-family: 'Bungee', cursive; */
+}
+
+.loading {
+    display: block;
+    text-align: center;
+    border: 1px solid teal;
+    /* font-family: 'Bungee', cursive; */
+    font-family: 'Pangolin', cursive;
+    font-size: 1rem;
+}
+
+.sorry {
+    display: block;
+    text-align: center;
+    border: 1px solid green;
+    /* font-family: 'Bungee', cursive; */
+    font-family: 'Pangolin', cursive;
+    font-size: 1rem;
+}
+
+.match {
+    display: block;
+    text-align: center;
+    border: 1px solid blue;
+    /* font-family: 'Bungee', cursive; */
+    font-family: 'Pangolin', cursive;
+    font-size: 1rem;
+}
+
+.not-match {
+    display: block;
+    text-align: center;
+    border: 1px solid black;
+    /* font-family: 'Bungee', cursive; */
+    font-family: 'Pangolin', cursive;
+    font-size: 1rem;
 }

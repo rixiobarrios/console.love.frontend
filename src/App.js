@@ -28,7 +28,7 @@ class App extends Component {
                         <Link to="/profiles">
                             <img
                                 id="logo"
-                                src="https://i.imgur.com/dpCrP5z.png"
+                                src="https://i.imgur.com/Zdurg5V.png"
                                 alt="console.love"
                             />
                         </Link>

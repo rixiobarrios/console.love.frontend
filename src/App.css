@@ -1,27 +1,50 @@
 header,
 nav {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .guest-link {
-  text-decoration: underline;
-  display: block;
-  text-align: center;
+    color: crimson;
+    /* font-family: 'Bungee', cursive; */
+    font-family: 'Pangolin', cursive;
+    text-decoration: underline;
+    display: block;
+    text-align: center;
 }
 
 .delete-container {
-  display: block;
-  text-align: center;
+    display: block;
+    text-align: center;
+    /* border: 1px solid orange; */
 }
 
-.delete-button {
+/* .delete-button {
   font-size: 1rem;
   background-color: white;
   padding: 0.5rem 0.75rem;
   color: black;
+} */
+
+.delete-button {
+    border: 1px solid grey;
+    display: block;
+    margin: auto;
+    font-family: 'Bungee', cursive;
+    font-size: 1rem;
+    width: 280px;
+    padding: 0.5rem 0.75rem;
+    background-color: black;
+    color: white;
 }
 
 #logo {
-  border: 1px solid red;
+    border: 1px solid red;
+    width: 400px;
+}
+
+@media (max-width: 500px) {
+    #logo {
+        width: 280px;
+    }
 }
