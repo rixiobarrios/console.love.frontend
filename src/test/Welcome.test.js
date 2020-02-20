@@ -1,5 +1,5 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import Welcome from '../components/Welcome';
 import ProfileForm from '../components/ProfileForm';
 
@@ -8,7 +8,9 @@ describe('Welcome component', () => {
   beforeEach(() => {
     component = mount(<Welcome />);
   });
-  it('should render as expected', () => {
-    expect(component.state('profile').toBe('object'));
+  it('should have a state error that comes back false', () => {
+    expect(component.state('error')).toBe(false);
+    component.find('input').simulate('change', { target: { value: 'error' } });
+    expect(component.state('error')).toBe('false');
   });
 });
