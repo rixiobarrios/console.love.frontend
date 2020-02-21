@@ -6,28 +6,25 @@
 
 <img width="150" src="https://user-images.githubusercontent.com/55994508/74997584-07820380-541c-11ea-9355-b1c8bad08032.png" /> is an app for lonely software developers looking to connect with each other IRL. Users can create a profile for themselves and have it displayed on the home page for other users to see and match with. Users can also edit their own profiles to update their status.
 
+[Try our app](http://consoledotlove.herokuapp.com/)
+
+
+--RIXIO add application preview gif here - no header please
+
+<img width="746" alt="" src="https://your-file-here.gif">
+
 **Concept** Idea (_source: Here_)
 
 --RIXIO, this app was your idea so if you want to put a few words about what inspired you feel free
-
-## Link to the Application
-
-[console.love](http://consoledotlove.herokuapp.com/)
-
-## Application Preview (delete this header after adding gif)
-
---RIXIO
-
-<img width="746" alt="" src="https://your-file-here.gif">
 
 ## Target Audience
 
 <img width="150" src="https://user-images.githubusercontent.com/55994508/74997584-07820380-541c-11ea-9355-b1c8bad08032.png" /> is for anyone who wants to connect with software engineers!
 
 ## Instructions
---RIXIO
+-- RIXIO/MUEZZIN please proof and see if these instructions are good enough for you
 
-On the home page, the user may either create a profile or continue as a guest. They will then be taken to the profiles page, which displays developers' pictures
+On the home page, the user may either create a profile or continue as a guest. They will then be taken to the profiles page, where they can view individual profiles! Once a profile is selected, the user can decide whether or not they want to match.  Once they click the match button, they'll find out if they were a .match(), and their match's Github link will be revealed!
 
 ## Hardware Platform
 
@@ -134,21 +131,13 @@ Back end:
 [Submit an issue to the front-end repo](https://github.com/muezzinsarwar/console.love-frontend/issues)
 [Submit an issue to the back-end repo](https://github.com/muezzinsarwar/console.love-backend/issues)
 
-## Challenges
---ALL
+## Challenges and Bugs
+--MUEZZIN (but all may add)
 
 Front-end testing with Jest and Enzyme was particularly challenging
 Couldn't get redirect to newly created profile page to work
-
-## Bugs
--- MUEZZIN
-
-1. Pemnding resolution
-2. ~~Resolved~~
-3. ~~Resolved~~
-4. ~~Resolved~~
-5. ~~Resolved~~
-6. ~~Resolved~~
+Match algorithm proved difficult
+Setting state guest v user
 
 ## Fixes
 
