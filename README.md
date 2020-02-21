@@ -35,9 +35,7 @@ This is a responsive web-based application suitable for use on any device.
 
 ## The Making of the Application
 
---JAIMIE
-
-For our wireframes and other planning info, see our [planning repo](Link to planning repo)
+For our wireframes and other planning info, see our [planning repo](https://github.com/muezzinsarwar/console.love-frontend/tree/master/Planning)
 
 The console.love team used a combination of Centralized and Feature Branch Git Workflows, with an emphasis on pair programming. Responsibilities were distributed roughly as follows:
 
@@ -47,8 +45,7 @@ Muezzin - Git Manager - Javascript Guru - Algorithm Wizard
 <br>
 Rixio - Ideas Guy - CSS Master - Comfortable in React
 
-These responsibilities were chosen based on team members' natural strengths. Each member worked on all aspects of the project, making sure to each learn something new. All planning and task tracking was handled through our Trello Team Board.  The team has set a rough schedule and will meet over Zoom. 
-From the planning, to the building and the navigating through the construction and design.
+These responsibilities were chosen based on team members' natural strengths. Each member worked on all aspects of the project, making sure to each learn something new. All planning and task tracking was handled through our Trello Team Board.
 
 ## The API - JAIMIE WILL MOVE THIS SECTION TO THE BACKEND
 
@@ -82,31 +79,24 @@ Explanation about why we are featuring this code here. Code must be something we
 
 ## Features
 
---JAIMIE
+We achieved roughly our silver level of functionality and design, with features including:
 
-## We achieved roughly our silver level functionality
+-   [ ] App optimized for mobile
+-   [ ] Profile pictures randomize on page load
+-   [ ] Limit profiles to 10 on load, with button to show 10 more
+-   [ ] All API calls switched to fetch method
+-   [ ] Colorful CSS, plus a matching logo and favicon
+-   [ ] Matching with someone reveals a link to their Github
 
--   **Bronze/Minimum Viable Product**
+In the future, we aspire to add the following functionality to reach our gold level:
 
--   [x] Feature 1
--   [x] Feature 2
--   [x] Feature 3
-
--   **Silver**
-
--   [ ] Feature 4
--   [ ] Feature 5
--   [ ] Feature 6
-
--   **Gold**
-
--   [ ] Feature 7
--   [ ] Feature 8
--   [ ] Feature 9
-
--   **Platinum**
-
--   [ ] Feature 10
+-   [ ] When a new profile is created, the user is redirected to their newly created profile page
+-   [ ] User authentication
+-   [ ] Footer or header link to My Profile - if no account, will show a sign up button
+-   [ ] Match algorithm based on programming languages in common
+-   [ ] Matches are saved in memory
+-   [ ] Incorporate GoogleMaps location for profiles/user
+-   [ ] Messaging by ID
 
 ## Technologies used
 
@@ -141,9 +131,8 @@ Back end:
 
 -- MUEZZIN
 
-Submit contribution through our repository for approval through this links:
-[Application Repository Front-end](link-here)
-[Application Repository Back-end](link-here)
+[Submit an issue to the front-end repo](https://github.com/muezzinsarwar/console.love-frontend/issues)
+[Submit an issue to the back-end repo](https://github.com/muezzinsarwar/console.love-backend/issues)
 
 ## Challenges
 --ALL
