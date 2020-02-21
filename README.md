@@ -8,9 +8,7 @@
 
 [Meet your .match()!](http://consoledotlove.herokuapp.com/)
 
---RIXIO add application preview gif here - no header please
-
-<img width="746" alt="" src="https://your-file-here.gif">
+<img width="746" alt="" src="https://user-images.githubusercontent.com/55994508/75056855-6e93cc80-549d-11ea-8083-6cae6038ba59.gif">
 
 **Concept** Idea (_source: Here_)
 
@@ -129,6 +127,9 @@ Design:
 -   Setting state guest v user
 
 ## Sources
+
+Front-end Media:
+- [hnet](https://hnet.com/video-to-gif/) for app preview gif
 
 Front-end testing:
 
