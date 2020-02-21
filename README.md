@@ -8,7 +8,6 @@
 
 [Meet your .match()!](http://consoledotlove.herokuapp.com/)
 
-
 --RIXIO add application preview gif here - no header please
 
 <img width="746" alt="" src="https://your-file-here.gif">
@@ -22,9 +21,12 @@
 <img width="150" src="https://user-images.githubusercontent.com/55994508/74997584-07820380-541c-11ea-9355-b1c8bad08032.png" /> is for anyone who wants to connect with software engineers!
 
 ## Instructions
+
 -- RIXIO/MUEZZIN please proof and see if these instructions are good enough for you
 
-On the home page, the user may either create a profile or continue as a guest. They will then be taken to the profiles page, where they can view individual profiles! Once a profile is selected, the user can decide whether or not they want to match.  Once they click the match button, they'll find out if they were a .match(), and their match's Github link will be revealed!
+--RIXIO
+
+On the home page, the user may either create a profile or continue as a guest. They will then be taken to the profiles page, where they can view individual profiles! Once a profile is selected, the user can decide whether or not they want to match. Once they click the match button, they'll find out if they were a .match(), and their match's Github link will be revealed!
 
 ## The Making of the Application
 
@@ -98,17 +100,20 @@ In the future, we aspire to add the following functionality to reach our gold le
 --MUEZZIN
 
 Functionality:
-- React with React Router for navigation
-- Fetch for API calls (was Axios, but we were unable to achieve full CRUD, so switched to fetch)
-- Lodash for randomization
+
+-   React with React Router for navigation
+-   Fetch for API calls (was Axios, but we were unable to achieve full CRUD, so switched to fetch)
+-   Lodash for randomization
 
 Testing:
-- Enzyme
-- Jest
-- React Testing Library
+
+-   Enzyme
+-   Jest
+-   React Testing Library
 
 Design:
-- CSS Grid
+
+-   CSS Grid
 
 ## Contribution Guidelines
 
@@ -119,27 +124,30 @@ Design:
 [Submit an issue to the back-end repo](https://github.com/muezzinsarwar/console.love-backend/issues)
 
 ## Challenges, Bugs and Fixes
+
 --MUEZZIN (but all may add)
 
-- Front-end testing with Jest and Enzyme was particularly challenging
-- Couldn't get redirect to newly created profile page to work
-- Match algorithm proved difficult
-- Setting state guest v user
+-   Front-end testing with Jest and Enzyme was particularly challenging
+-   Couldn't get redirect to newly created profile page to work
+-   Match algorithm proved difficult
+-   Setting state guest v user
 
 ## Sources
 
 Front-end testing:
-- [Testing API Calls in React](https://medium.com/@manastunga/unit-testing-api-calls-in-react-enzyme-and-jest-133b87aaacb4) enabled us to build successful tests for our more complex components
-- [React Testing Library Common Scenarios](https://rafaelquintanilha.com/react-testing-library-common-scenarios/)
-- [React Testing with Jest and React-testing-library](https://www.youtube.com/watch?time_continue=773&v=3e1GHCA3GP0&feature=emb_logo)
-- [Testing React Components with Jest and Enzyme](https://blog.bitsrc.io/how-to-test-react-components-with-jest-and-enzyme-in-depth-145fcd06b90)
+
+-   [Testing API Calls in React](https://medium.com/@manastunga/unit-testing-api-calls-in-react-enzyme-and-jest-133b87aaacb4) enabled us to build successful tests for our more complex components
+-   [React Testing Library Common Scenarios](https://rafaelquintanilha.com/react-testing-library-common-scenarios/)
+-   [React Testing with Jest and React-testing-library](https://www.youtube.com/watch?time_continue=773&v=3e1GHCA3GP0&feature=emb_logo)
+-   [Testing React Components with Jest and Enzyme](https://blog.bitsrc.io/how-to-test-react-components-with-jest-and-enzyme-in-depth-145fcd06b90)
 
 Front-end Framework:
 
-- [Jennifer Meade's CRUD App example](https://git.generalassemb.ly/seir-129/react-crud-classes) helped us construct our front end
+-   [Jennifer Meade's CRUD App example](https://git.generalassemb.ly/seir-129/react-crud-classes) helped us construct our front end
 
 ## Acknowledgements
 
 Special thanks to:
-- Hou Chia for his help with Jest/Enzyme testing
-- Jennifer Meade for her invaluable React Crud Classes app
+
+-   Hou Chia for his help with Jest/Enzyme testing
+-   Jennifer Meade for her invaluable React Crud Classes app

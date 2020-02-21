@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
 
 header,
 nav {
@@ -7,7 +7,7 @@ nav {
 }
 
 #logo {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 400px;
 }
 
@@ -20,11 +20,11 @@ nav {
 #sign-up-message {
     display: block;
     text-align: center;
-    border: 1px solid brown;
+    /* border: 1px solid brown; */
     font-size: 1.2rem;
     margin: 15px 80px 15px 80px;
     /* padding: 15px 0px 15px 0px; */
-    font-family: 'Roboto', cursive;
+    font-family: 'Quicksand', cursive;
 }
 
 @media (max-width: 500px) {
@@ -35,7 +35,7 @@ nav {
 }
 .guest-link {
     color: crimson;
-    font-family: 'Roboto', cursive;
+    font-family: 'Quicksand', cursive;
     text-decoration: underline;
     display: block;
     text-align: center;
@@ -44,11 +44,11 @@ nav {
 .delete-container {
     display: block;
     text-align: center;
-    border: 1px solid orange;
+    /* border: 1px solid orange; */
 }
 
 .delete-button {
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     display: block;
     margin: auto;
     font-family: 'Bungee', cursive;
