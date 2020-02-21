@@ -44,24 +44,19 @@ These responsibilities were chosen based on team members' natural strengths. Eac
 
 ## Browser View 1
 
-<img width="746" alt="browser view 1" src="image-link-here">
+<img width="746" alt="browser view 1" src="https://user-images.githubusercontent.com/55994508/75016880-91988f00-5451-11ea-877b-9515d77bb1eb.png">
 
 ## Browser View 2
 
-<img width="746" alt="browser view 2" src="image-link-here">
+<img width="746" alt="browser view 2" src="https://user-images.githubusercontent.com/55994508/75017127-08358c80-5452-11ea-8c22-06d890a98f38.png">
 
 ## Mobile View 1
 
-<img width="746" alt="mobile view 1" src="image-link-here">
+<img width="746" alt="mobile view 1" src="https://user-images.githubusercontent.com/55994508/75014664-71b29c80-544c-11ea-8477-312a5880c042.png">
 
 ## Mobile View 2
 
-<img width="746" alt="mobile view 2" src="image-link-here">
-  
-## Code structure??
--- MUEZZIN
--dataflow
--algorithms
+<img width="746" alt="mobile view 2" src="https://user-images.githubusercontent.com/55994508/75014715-8db63e00-544c-11ea-9948-95df67bb084f.png">
 
 ## Code Sample
 
