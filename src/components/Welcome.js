@@ -45,7 +45,6 @@ class Welcome extends Component {
 				response.json();
 			})
 			.then(response => {
-				console.log(response);
 				this.setState({ createdId: true });
 				this.props.setGuest(false);
 			})

@@ -34,7 +34,6 @@ describe('ProfileForm component', () => {
         handleChange={defaultProps.handleChange}
       />
     );
-    console.log(component.find('.form-container'));
     expect(component.find('.form-container').length).toBe(1);
   });
 });

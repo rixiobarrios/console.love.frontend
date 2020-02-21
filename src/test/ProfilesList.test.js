@@ -11,6 +11,5 @@ beforeEach(() => {
 });
 
 it('should render', () => {
-  console.log(component.find('.loading'));
   expect(component.find('.loading').length).toBe(1);
 });

@@ -11,6 +11,5 @@ beforeEach(() => {
 });
 
 it('should render', () => {
-  console.log(component.find('.delete-button'));
   expect(component.find('.delete-button').length).toBe(1);
 });
