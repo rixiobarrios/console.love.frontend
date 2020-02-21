@@ -10,19 +10,11 @@
 
 <img width="746" alt="" src="https://user-images.githubusercontent.com/55994508/75056855-6e93cc80-549d-11ea-8083-6cae6038ba59.gif">
 
-**Concept** Idea (_source: Here_)
-
---RIXIO, this app was your idea so if you want to put a few words about what inspired you feel free
-
 ## Target Audience
 
 <img width="150" src="https://user-images.githubusercontent.com/55994508/74997584-07820380-541c-11ea-9355-b1c8bad08032.png" /> is for anyone who wants to connect with software engineers!
 
 ## Instructions
-
--- RIXIO/MUEZZIN please proof and see if these instructions are good enough for you
-
---RIXIO
 
 On the home page, the user may either create a profile or continue as a guest. They will then be taken to the profiles page, where they can view individual profiles! Once a profile is selected, the user can decide whether or not they want to match. Once they click the match button, they'll find out if they were a .match(), and their match's Github link will be revealed!
 
@@ -56,16 +48,6 @@ These responsibilities were chosen based on team members' natural strengths. Eac
 
 <img width="746" alt="mobile view 2" src="https://user-images.githubusercontent.com/55994508/75014715-8db63e00-544c-11ea-9948-95df67bb084f.png">
 
-## Code Sample
-
---RIXIO
-
-```javascript
-console.log(console.love()).match();
-```
-
-Explanation about why we are featuring this code here. Code must be something we are proud of that served as a corder stone for the app.(_source: Person_)
-
 ## Features
 
 We achieved roughly our silver level of functionality and design, with features including:
@@ -89,8 +71,6 @@ In the future, we aspire to add the following functionality to reach our gold le
 -   [ ] Refactor with React Hooks
 
 ## Technologies used
-
---MUEZZIN
 
 Functionality:
 
@@ -118,8 +98,6 @@ Design:
 - Create changes to the code and if you wish to add a new feature to the currently existing application [submit an issue](https://github.com/muezzinsarwar/console.love-frontend/issues) detailing your changes
 
 ## Challenges, Bugs and Fixes
-
---MUEZZIN (but all may add)
 
 -   Front-end testing with Jest and Enzyme was particularly challenging
 -   Couldn't get redirect to newly created profile page to work
