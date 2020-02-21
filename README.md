@@ -1,6 +1,6 @@
 <img width="746" src="https://user-images.githubusercontent.com/55994508/74997584-07820380-541c-11ea-9355-b1c8bad08032.png" />
 
-# Project #3: console.love: A Dating and Friendship App for Programmers Version 1.0
+# A Dating and Friendship App for Programmers
 
 ## Overview
 
@@ -173,14 +173,35 @@ Couldn't get redirect to newly created profile page to work
 6. Explain fix and who helped
 
 ## Sources
---ALL
-Source [Testing API Calls in React](https://medium.com/@manastunga/unit-testing-api-calls-in-react-enzyme-and-jest-133b87aaacb4) enabled us to build successful tests for our more complex components
-Source [Jennifer Meade's CRUD App example](https://git.generalassemb.ly/seir-129/react-crud-classes) helped us construct our front end
-Source [Stocksnap](https://stocksnap.io/) - our source for stock profile pictures
-Source [name](link-here)
-Source [name](link-here)
-Source [name](link-here)
-Source [name](link-here)
+
+Front-end testing:
+- [Testing API Calls in React](https://medium.com/@manastunga/unit-testing-api-calls-in-react-enzyme-and-jest-133b87aaacb4) enabled us to build successful tests for our more complex components
+- [React Testing Library Common Scenarios](https://rafaelquintanilha.com/react-testing-library-common-scenarios/)
+- [React Testing with Jest and React-testing-library](https://www.youtube.com/watch?time_continue=773&v=3e1GHCA3GP0&feature=emb_logo)
+- [Testing React Components with Jest and Enzyme](https://blog.bitsrc.io/how-to-test-react-components-with-jest-and-enzyme-in-depth-145fcd06b90)
+
+Front-end Framework:
+
+- [Jennifer Meade's CRUD App example](https://git.generalassemb.ly/seir-129/react-crud-classes) helped us construct our front end
+
+Media:
+
+- [Stocksnap](https://stocksnap.io/) for stock profile pictures
+- [Pixlr](https://pixlr.com/)
+- [Kapwing](https://www.kapwing/)
+- [LogoHub](https://logohub.io/)
+
+Planning:
+- [Miro](https://miro.com/) to create our API dataflow diagram
+- [Trello](http://www.trello.com) for planning and task management
+
+
+## Acknowledgements
+We would like to thank:
+- Rixio's mentor - helped us fix our POST (move to backend readme)
+- Hou Chia for his help with Jest/Enzyme testing on the front-end
+- Jennifer Meade for her invaluable React Crud Classes app
+- Esin Saribudak for helping us troubleshoot Heroku deployment
 
 # Special Thanks
 --RIXIO
@@ -188,16 +209,3 @@ Source [name](link-here)
 Names here
 **General Assembly Students:**
 Names here
-
-## Acknowledgement
---JAIMIE
-- Rixio's mentor - helped us fix our post
-- Hou helped with front end testing
-- source for api calls testing added to readme - needs comment in code
-- Jennifer Meade for her React Crud Classes
-- Esin for helping troubleshoot deployment
-
-## Others
---ALL
-Anything else you'd like to mention
-
