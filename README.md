@@ -112,11 +112,12 @@ Design:
 
 ## Contribution Guidelines
 
--- MUEZZIN
-
-[Submit an issue to the front-end repo](https://github.com/muezzinsarwar/console.love-frontend/issues)
-<br>
-[Submit an issue to the back-end repo](https://github.com/muezzinsarwar/console.love-backend/issues)
+- Fork and clone this repo
+- Open your terminal and go to the directory you want to store this application and ‘git clone’ it
+- Run npm i to install all dependencies
+- Run ‘npm run start’ to open the app in browser
+- To see data you have to run the [back-end](https://github.com/muezzinsarwar/console.love-backend) for this application as well
+- Create changes to the code and if you wish to add a new feature to the currently existing application [submit an issue](https://github.com/muezzinsarwar/console.love-frontend/issues) detailing your changes
 
 ## Challenges, Bugs and Fixes
 
