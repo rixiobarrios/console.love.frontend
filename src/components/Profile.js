@@ -13,13 +13,7 @@ class Profile extends Component {
   }
 
   componentDidMount() {
-    let url;
-    if (this.props.match.params.id === undefined) {
-      url = 1;
-    } else {
-      url = this.props.match.params.id;
-    }
-    fetch(`${APIURL}/profiles/${url}`)
+    fetch(`${APIURL}/profiles/${this.props.match.params.id}`)
       .then(response => response.json())
       .then(data => {
         this.setState({ profile: data });
@@ -44,7 +38,6 @@ class Profile extends Component {
 
     return (
       <div className="profile-page-container">
-        <div className="cheat-div">We are cheating</div>
         <div className="profile-box">
           <img
             id="profile-image"
@@ -58,11 +51,6 @@ class Profile extends Component {
               <li>City: {this.state.profile.location}</li>
               <li>Bio: {this.state.profile.bio}</li>
               <li>Languages: {this.state.profile.languages}</li>
-              <li>
-                <a href={this.state.profile.github}>
-                  <button className="github-button">Github</button>
-                </a>
-              </li>
             </ul>
           </div>
         </div>
