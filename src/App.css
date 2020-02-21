@@ -22,8 +22,8 @@ nav {
     text-align: center;
     border: 1px solid brown;
     font-size: 1.2rem;
-    margin: 15px 480px 15px 480px;
-    /* padding: 15px 10px 15px 10px; */
+    margin: 15px 80px 15px 80px;
+    /* padding: 15px 0px 15px 0px; */
     font-family: 'Roboto', cursive;
 }
 
@@ -35,7 +35,6 @@ nav {
 }
 .guest-link {
     color: crimson;
-    /* font-family: 'Bungee', cursive; */
     font-family: 'Roboto', cursive;
     text-decoration: underline;
     display: block;
@@ -45,15 +44,8 @@ nav {
 .delete-container {
     display: block;
     text-align: center;
-    /* border: 1px solid orange; */
+    border: 1px solid orange;
 }
-
-/* .delete-button {
-  font-size: 1rem;
-  background-color: white;
-  padding: 0.5rem 0.75rem;
-  color: black;
-} */
 
 .delete-button {
     border: 1px solid grey;
