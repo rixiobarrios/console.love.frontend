@@ -11,7 +11,6 @@ html {
 
 .profile-container {
     max-width: 900px;
-    /* border: 1px solid black; */
     display: inline-grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -24,7 +23,6 @@ html {
 }
 
 #profile-image-list {
-    /* border: 1px solid green; */
     margin: 10px;
     padding: 0 auto;
     max-width: 260px;
@@ -33,21 +31,17 @@ html {
 }
 
 #profile-name-age {
-    /* border: 1px solid fuchsia; */
     font-family: 'Quicksand', cursive;
     word-spacing: 5em;
     letter-spacing: 0.1em;
-    /* font-family: 'Bungee', cursive; */
 }
 
 .show-more-container {
     display: block;
     text-align: center;
-    /* border: 1px solid burlywood; */
 }
 
 .show-more-button {
-    /* border: 1px solid grey; */
     display: block;
     margin: 15px auto;
     font-family: 'Bungee', cursive;
@@ -78,7 +72,6 @@ html {
     display: block;
     text-align: center;
     margin-top: 150px;
-    /* border: 1px solid green; */
     font-family: 'Quicksand', cursive;
     font-size: 1rem;
 }
@@ -87,7 +80,6 @@ html {
     display: block;
     text-align: center;
     margin-top: 150px;
-    /* border: 1px solid blue; */
     font-family: 'Quicksand', cursive;
     font-size: 2.6rem;
 }
@@ -102,7 +94,6 @@ html {
     display: block;
     text-align: center;
     margin-top: 150px;
-    /* border: 1px solid black; */
     font-family: 'Quicksand', cursive;
     font-size: 1.4rem;
 }

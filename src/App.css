@@ -7,7 +7,6 @@ nav {
 }
 
 #logo {
-    /* border: 1px solid red; */
     width: 400px;
 }
 
@@ -20,10 +19,8 @@ nav {
 #sign-up-message {
     display: block;
     text-align: center;
-    /* border: 1px solid brown; */
     font-size: 1.2rem;
     margin: 15px 80px 15px 80px;
-    /* padding: 15px 0px 15px 0px; */
     font-family: 'Quicksand', cursive;
 }
 
@@ -44,11 +41,9 @@ nav {
 .delete-container {
     display: block;
     text-align: center;
-    /* border: 1px solid orange; */
 }
 
 .delete-button {
-    /* border: 1px solid grey; */
     display: block;
     margin: auto;
     font-family: 'Bungee', cursive;

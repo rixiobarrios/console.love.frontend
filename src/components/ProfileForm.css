@@ -1,7 +1,6 @@
 .form-container {
     display: block;
     text-align: center;
-    /* border: 1px solid orange; */
 }
 
 form {
@@ -21,7 +20,6 @@ input {
 }
 
 #submit-button {
-    /* border: 1px solid grey; */
     display: block;
     font-family: 'Bungee', cursive;
     font-size: 1rem;
