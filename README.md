@@ -4,7 +4,7 @@
 
 ## Console.love: A Dating and Friendship App for Programmers
 
-Documentation for Project# 3 Assignment by General Assembly](https://www.notlinkedyet.com)
+[Documentation for Project# 3 Assignment by General Assembly](https://www.notlinkedyet.com)
 
 ## Overview
 
