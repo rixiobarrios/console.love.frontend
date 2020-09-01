@@ -4,6 +4,8 @@
 
 ## Console.love: A Dating and Friendship App for Programmers
 
+-   [Documentation for Project# 3 Assignment by General Assembly](https://www.notlinkedyet.com)
+
 ## Overview
 
 <img width="150" src="https://user-images.githubusercontent.com/55994508/74997584-07820380-541c-11ea-9355-b1c8bad08032.png" /> is a responsive app for lonely software developers looking to connect with each other IRL. Users can create a profile for themselves and have it displayed on the home page for other users to see and match with. Users can also edit their own profiles to update their status.
